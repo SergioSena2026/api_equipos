@@ -1,7 +1,6 @@
 package com.sena.api.controller;
 
 import com.sena.api.entity.Cliente;
-import com.sena.api.entity.Equipo;
 import com.sena.api.sevice.ClienteService;
 import org.springframework.web.bind.annotation.*;
 
@@ -9,6 +8,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/clientes")
+@CrossOrigin(origins = "http://localhost:5173")
 public class ClienteController {
     private final ClienteService clienteService;
 

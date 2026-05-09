@@ -2,13 +2,13 @@ package com.sena.api.controller;
 
 import com.sena.api.entity.Equipo;
 import com.sena.api.sevice.EquipoService;
-import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
 @RequestMapping("/api/equipos")
+@CrossOrigin(origins = "http://localhost:5173")
 public class EquipoController {
     private final EquipoService equipoService;
 
